@@ -28,6 +28,7 @@ Optou-se pelo uso de padrões da arquitetura limpa e DDD (Domain-Driven Design).
 ### Como Rodar a Aplicação
 
 A aplicação roda em um container Docker Linux orquestrado pelo DP
+```
 "Server={IP_DA_MAQUINA_QUE_SEU_DOCKER_ESTÁ_RODANDO},1433;Database=simplerecord;User ID=sa;Password=1q2w3e4r@#$; TrustServerCertificate=true;"
 ```
 
