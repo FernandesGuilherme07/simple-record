@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Simple-Record.Api.props" />
+</Project>
