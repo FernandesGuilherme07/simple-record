@@ -1,0 +1,24 @@
+version: '3.9'
+
+services:
+  sql-server:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    container_name: sql-server-container
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_SA_PASSWORD: "1q2w3e4r@#$"
+      MSSQL_PID: "Developer"
+    ports:
+      - "1433:1433"
+    volumes:
+      - ./certs:/var/opt/mssql/certs   
+
+  simple-record.api:
+    image: ${DOCKER_REGISTRY-}simplerecordapi
+    build:
+      context: .
+      dockerfile: Simple-Record.Api/Dockerfile
+    ports:
+      - "80:5000"
+    depends_on:
+      - sql-server

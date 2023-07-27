@@ -1,0 +1,26 @@
+# Pastas específicas de binários e logs
+/bin/
+/obj/
+/TestResults/
+/simple-record.service/
+*.exe
+*.pdb
+
+# Arquivos de usuário e configurações
+*.user
+*.suo
+*.sln.docstates
+
+# Pacotes NuGet
+/packages/
+*.nupkg
+
+# Arquivos gerados pelo Visual Studio
+*.VisualState.xml
+*.cache
+*.vs
+*.vscode
+
+# Ignorar arquivos específicos de projeto, se necessário
+# /Caminho/Para/Projeto/Projeto.csproj
+# /Caminho/Para/OutroProjeto/OutroProjeto.csproj
