@@ -27,12 +27,7 @@ Optou-se pelo uso de padrões da arquitetura limpa e DDD (Domain-Driven Design).
 
 ### Como Rodar a Aplicação
 
-A aplicação roda em um container Docker Linux orquestrado pelo Docker Compose para gerenciar tanto a aplicação como o banco de dados. Para rodar a aplicação, é necessário ter o Docker instalado em sua máquina e é indicado o uso da IDE Visual Studio para maior facilidade.
-
-#### No Visual Studio
-
-1. Se o Docker rodar no Windows, vá até o arquivo `appsettings.development.json` e substitua a string de conexão atual por: 
-```
+A aplicação roda em um container Docker Linux orquestrado pelo DP
 "Server={IP_DA_MAQUINA_QUE_SEU_DOCKER_ESTÁ_RODANDO},1433;Database=simplerecord;User ID=sa;Password=1q2w3e4r@#$; TrustServerCertificate=true;"
 ```
 
